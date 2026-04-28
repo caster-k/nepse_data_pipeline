@@ -60,5 +60,14 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+  grafana:
+    image: grafana/grafana
+    container_name: nepse_grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+
 volumes:
   postgres_data:
+
