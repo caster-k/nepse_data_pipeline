@@ -44,6 +44,3 @@ CREATE TABLE IF NOT EXISTS nepse.stock_forecast (
     predicted_close NUMERIC(12, 2),
     model_name VARCHAR(50)
 );
-
-
-
